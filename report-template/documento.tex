@@ -21,6 +21,7 @@
 \def\titulo{CIBERSEGURANÇA}
 \def\data{DATA}
 \def\autores{Rúben Gomes, Tiago Garcia}
+\def\autoresacronimos{RG, TG}
 \def\autorescontactos{113435 rlcg@ua.pt, 114184 tiago.rgarcia@ua.pt}
 \def\versao{VERSÃO 1}
 \def\departamento{Dept. de Eletrónica, Telecomunicações e Informática}
@@ -84,11 +85,11 @@ Resumo de 200-300 palavras.
 
 %%%%%% Agradecimentos %%%%%%
 % Segundo glisc deveria aparecer após conclusão...
-\renewcommand{\abstractname}{Agradecimentos}
-\begin{abstract}
-Eventuais agradecimentos.
-Comentar bloco caso não existam agradecimentos a fazer.
-\end{abstract}
+% \renewcommand{\abstractname}{Agradecimentos}
+% \begin{abstract}
+% Eventuais agradecimentos.
+% Comentar bloco caso não existam agradecimentos a fazer.
+% \end{abstract}
 
 
 \tableofcontents
@@ -101,7 +102,7 @@ Comentar bloco caso não existam agradecimentos a fazer.
 \pagenumbering{arabic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Introdução}
+\chapter*{Introdução}
 \label{chap.introducao}
 
 Introduz o tema, apresenta a motivação e finalmente a estrutura.
@@ -114,32 +115,21 @@ sendo estes discutidos no \autoref{chap.analise}.
 Finalmente, no \autoref{chap.conclusao} são apresentadas
 as conclusões do trabalho.
 
-\chapter{Metodologia}
-\label{chap.metodologia}
-Descreve os métodos utilizados para obtenção de resultados.
+\chapter{Cibersegurança no geral}
+\label{chap.cibersegurançanogeral}
+\section{Segurança}
 
-Neste esqueleto de relatório aproveitamos este capítulo para exemplificar
-como se usam alguns elementos de {\LaTeX}.
+\chapter{Legislação}
+\label{chap.legislação}
+\section{Legislação}
+\section{Proteção de dados}
 
-\section{Exemplos}
+\chapter{Programação aplicada à cibersegurança}
+\label{chap.programacao}
 
-\subsection{Utilização de acrónimos}
-Esta é a primeira invocação do acrónimo \ac{ua}.
-E esta é a segunda \ac{ua}.
-
-Outra referência à \ac{leci}.
-
-\subsection{Referências bibliográficas}
-Informação relativa à estrutura formal de um relatório pode ser obtida
-na página do \ac{glisc}\cite{glisc}.
-
-\chapter{Resultados}
-\label{chap.resultados}
-Descreve os resultados obtidos.
-
-\chapter{Análise}
-\label{chap.analise}
-Analisa os resultados.
+\chapter{Vulnerabilidades}
+\section{Análise de vulnerabilidades}
+\section{Análise de evidências}
 
 \chapter{Conclusões}
 \label{chap.conclusao}
@@ -153,7 +143,7 @@ por exemplo AS para António Silva.
 \vspace{10pt}
 \textbf{Indicar a percentagem de contribuição de cada autor.}\\
 
-\autores : xx\%, yy\%\\
+\autoresacronimos : xx\%, yy\%\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Acrónimos}
