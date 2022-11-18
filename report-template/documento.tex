@@ -5,10 +5,10 @@
 \usepackage{csquotes}
 \usepackage[portuguese]{babel} %Usar língua portuguesa
 \usepackage{blindtext} % Gerar texto automaticamente
-\usepackage[printonlyused]{acronym}
 \usepackage{hyperref} % para autoref
 \usepackage{graphicx}
 \usepackage{indentfirst}
+\usepackage{acronym}
 
 \bibstyle{plain}
 \bibliography{bibliografia}
@@ -27,6 +27,7 @@
 \def\departamento{Dept. de Eletrónica, Telecomunicações e Informática}
 \def\empresa{Universidade de Aveiro}
 \def\logotipo{ua.pdf}
+
 %
 %%%%%% CAPA %%%%%%
 %
@@ -80,16 +81,16 @@
 
 %%%%%% RESUMO %%%%%%
 \begin{abstract}
-Resumo de 200-300 palavras.
+Resumo de 200~-~300 palavras.
 \end{abstract}
 
 %%%%%% Agradecimentos %%%%%%
-% Segundo glisc deveria aparecer após conclusão...
-% \renewcommand{\abstractname}{Agradecimentos}
-% \begin{abstract}
-% Eventuais agradecimentos.
-% Comentar bloco caso não existam agradecimentos a fazer.
-% \end{abstract}
+Segundo glisc deveria aparecer após conclusão
+\renewcommand{\abstractname}{Agradecimentos}
+\begin{abstract}
+Eventuais agradecimentos.
+Comentar bloco caso não existam agradecimentos a fazer.
+\end{abstract}
 
 
 \tableofcontents
@@ -105,22 +106,12 @@ Resumo de 200-300 palavras.
 \chapter*{Introdução}
 \label{chap.introducao}
 
-Introduz o tema, apresenta a motivação e finalmente a estrutura.
-
-Este documento está dividido em quatro capítulos.
-Depois desta introdução,
-no \autoref{chap.metodologia} é apresentada a metodologia seguida,
-no \autoref{chap.resultados} são apresentados os resultados obtidos,
-sendo estes discutidos no \autoref{chap.analise}.
-Finalmente, no \autoref{chap.conclusao} são apresentadas
-as conclusões do trabalho.
-
 \chapter{Cibersegurança no geral}
-\label{chap.cibersegurançanogeral}
+\label{chap.cibersegurancanogeral}
 \section{Segurança}
 
 \chapter{Legislação}
-\label{chap.legislação}
+\label{chap.legislacao}
 \section{Legislação}
 \section{Proteção de dados}
 
@@ -128,6 +119,7 @@ as conclusões do trabalho.
 \label{chap.programacao}
 
 \chapter{Vulnerabilidades}
+\label{chap.vulnerabilidade}
 \section{Análise de vulnerabilidades}
 \section{Análise de evidências}
 
@@ -146,6 +138,7 @@ por exemplo AS para António Silva.
 \autoresacronimos : xx\%, yy\%\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter*{Acrónimos}
 \begin{acronym}
 \acro{ua}[UA]{Universidade de Aveiro}
