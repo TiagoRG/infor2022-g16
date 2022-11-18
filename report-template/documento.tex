@@ -5,10 +5,10 @@
 \usepackage{csquotes}
 \usepackage[portuguese]{babel} %Usar língua portuguesa
 \usepackage{blindtext} % Gerar texto automaticamente
-\usepackage{acronym}
 \usepackage{hyperref} % para autoref
 \usepackage{graphicx}
 \usepackage{indentfirst}
+\usepackage{acronym}
 
 \bibstyle{plain}
 \bibliography{bibliografia}
@@ -21,11 +21,13 @@
 \def\titulo{CIBERSEGURANÇA}
 \def\data{DATA}
 \def\autores{Rúben Gomes, Tiago Garcia}
+\def\autoresacronimos{RG, TG}
 \def\autorescontactos{113435 rlcg@ua.pt, 114184 tiago.rgarcia@ua.pt}
 \def\versao{VERSÃO 1}
 \def\departamento{Dept. de Eletrónica, Telecomunicações e Informática}
 \def\empresa{Universidade de Aveiro}
 \def\logotipo{ua.pdf}
+
 %
 %%%%%% CAPA %%%%%%
 %
@@ -79,11 +81,11 @@
 
 %%%%%% RESUMO %%%%%%
 \begin{abstract}
-Resumo de 200-300 palavras.
+Resumo de 200~-~300 palavras.
 \end{abstract}
 
 %%%%%% Agradecimentos %%%%%%
-% Segundo glisc deveria aparecer após conclusão...
+Segundo glisc deveria aparecer após conclusão
 \renewcommand{\abstractname}{Agradecimentos}
 \begin{abstract}
 Eventuais agradecimentos.
@@ -101,40 +103,29 @@ Comentar bloco caso não existam agradecimentos a fazer.
 \pagenumbering{arabic}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Introdução}
+\chapter*{Introdução}
 \label{chap.introducao}
 
 Com o passar dos anos, as tecnologias que temos ao nosso dispor tem evoluído de uma forma rápida e sem fim, como, por exemplo, o \textit{hardware} de um computador.\ Mas, com constantes evoluções, também vem uma necessidade de responsabilidade, pois com quanto mais recursos existirem, maior será o impacto de danos a indivíduos ou entidades.\\
 
 Com este relatório, iremos falar num tópico bastante sensível na atualidade, a Cibersegurança, bem como as diversas vulnerabilidades associadas de formas de nos protegermos contra as mesmas.
 
+\chapter{Cibersegurança no geral}
+\label{chap.cibersegurancanogeral}
+\section{Segurança}
 
-\chapter{Metodologia}
-\label{chap.metodologia}
-Descreve os métodos utilizados para obtenção de resultados.
+\chapter{Legislação}
+\label{chap.legislacao}
+\section{Legislação}
+\section{Proteção de dados}
 
-Neste esqueleto de relatório aproveitamos este capítulo para exemplificar
-como se usam alguns elementos de {\LaTeX}.
+\chapter{Programação aplicada à cibersegurança}
+\label{chap.programacao}
 
-\section{Exemplos}
-
-\subsection{Utilização de acrónimos}
-Esta é a primeira invocação do acrónimo \ac{ua}.
-E esta é a segunda \ac{ua}.
-
-Outra referência à \ac{leci}.
-
-\subsection{Referências bibliográficas}
-Informação relativa à estrutura formal de um relatório pode ser obtida
-na página do \ac{glisc}\cite{glisc}.
-
-\chapter{Resultados}
-\label{chap.resultados}
-Descreve os resultados obtidos.
-
-\chapter{Análise}
-\label{chap.analise}
-Analisa os resultados.
+\chapter{Vulnerabilidades}
+\label{chap.vulnerabilidade}
+\section{Análise de vulnerabilidades}
+\section{Análise de evidências}
 
 \chapter{Conclusões}
 \label{chap.conclusao}
@@ -148,9 +139,10 @@ por exemplo AS para António Silva.
 \vspace{10pt}
 \textbf{Indicar a percentagem de contribuição de cada autor.}\\
 
-\autores : xx\%, yy\%\\
+\autoresacronimos : xx\%, yy\%\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter*{Acrónimos}
 \begin{acronym}
 \acro{ua}[UA]{Universidade de Aveiro}
