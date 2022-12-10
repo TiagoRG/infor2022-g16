@@ -80,7 +80,13 @@
 
 %%%%%% RESUMO %%%%%%
 \begin{abstract}
-Resumo de 200~-~300 palavras.
+Neste trabalho é abordado o tema de cibersegurança, tema este que, com desenvolver gradual das tecnologias, torna-se cada vez mais importante. \ Vulnerabilidades surgem a cada dia, e há cada vez mais ataques cibernéticos. \ Com este projeto procuramos tocar nos pontos mais importantes do mundo digital. \bigskip
+
+Este trabalho está dividido em 2 grandes capítulos, a Cibersegurança no geral e as Vulnerabilidades. \par
+O capítulo da Cibersegurança no geral fala de uma ideia geral da cibersegurança, a sua importância, os tipos de ameaças existentes, como ataques, botnets, malware, entre muitos outros. \ O grande objetivo deste capítulo é introduzir ao leitor o conceito de cibersegurança, o que é, para que é importante bem como os diversos perigos a que o usuário comum está exposto nos dias que correm. \par
+O capítulo das Vulnerabilidades fala, como o nome indica, de vulnerabilidades em sistemas. \ Entre os métodos de análise, definições de termos usados em cibersegurança, e programas utilizados para o combate às mesmas, procura-se demonstrar ao leitor o quão vasto é o mundo online, e que o mundo todo está constantemente exposto a vários tipos de vulnerabilidades. \ Embora acabem por existir soluções, cada um deve ter sempre o seu cuidado a usar uma máquina. \ É também importante reforçar a ideia que o software usado em análises é permutável, ou seja, ao usá-lo mutuamente, obtém-se melhores resultados(desde que não tenham os mesmos propósitos!). \bigskip
+
+Com isto, os autores consideram que este relatório é ideal para qualquer leitor que deseja saber algo mais sobre o mundo digital.
 \end{abstract}
 
 %%%%%% Agradecimentos %%%%%%
@@ -379,9 +385,18 @@ Também é importante referir o projeto Juice Shop, que consiste numa aplicaçã
 
 \subsubsection{Docker}
 \label{subsubsec:docker}
-O Docker
+O Docker é um programa usado para desenvolver, enviar e correr aplicações. \ Desta forma, pode-se criar vários containers para correr ou enviar qualquer tipo de aplicação num espaço isolado. \ Tem a vantagem de poder ter várias aplicações a correr localmente no mesmo sistema sem consumir muito hardware, que é um grande benefício na área da cibersegurança, pois é usado vários programas ao mesmo tempo.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=350pt]{docker-scheme}
+    \caption{Esquema que representa o funcionamento do Docker}
+    \label{fig:docker-scheme}
+\end{figure}
 
+Os containers são feitos e funcionam em base de imagens, semelhante a um sistema operativo. \ Estas são normalmente imagens de outras imagens, apenas com algumas modificações feitas. \bigskip
+
+Uma imagem bastante conhecida neste campo é a imagem do Juice Shop, um projeto referido na \autoref{subsubsec:owasp-zap} \ Com o Docker e a imagem deste projeto, podemos criar um container que vai correr o site, localmente. \ A grande vantagem de correr ficheiros localmente é que pode-se fazer os testes sem qualquer problema, é possível fazer certos tipos de ataque que na Internet seriam considerados ilegais mas que são, sem dúvida alguma, cruciais para o bom funcionamento de um website.
 
 \chapter{Soluções de segurança}
 \label{ch:solucoes-de-seguranca}
@@ -391,14 +406,14 @@ O Docker
 Apresenta conclusões.
 
 \chapter*{Contribuições dos autores}
-Resumir aqui o que cada autor fez no trabalho.
-Usar abreviaturas para identificar os autores,
-por exemplo AS para António Silva.
+Cada autor contribuiu igualmente para o produto final do trabalho, sendo justamente atribuído a nota de 50\% a cada um. \\
+O autor \ac{rg} realizou o capítulo de Vulnerabilidades completo. \\
+O autor \ac{tg} realizou o capítulo de Cibersegurança no geral e Soluções de segurança.
 
 \vspace{10pt}
 \textbf{Indicar a percentagem de contribuição de cada autor.}\\
 
-\ac{rg}, \ac{tg} : xx\%, yy\%\\
+\ac{rg}, \ac{tg} : 50\%, 50\%\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
