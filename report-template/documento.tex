@@ -121,6 +121,7 @@ Com este relatório, irá ser abordado um tópico bastante sensível na atualida
 Quando os sistemas e ambientes digitais foram criados não existia quase nenhuma interação entre dispositivos e a pouca que existia era efetuada por cabo.\ Porém, quando a internet foi criada, a interação entra dispositivos digitais aumentou e com isso, tal como acontece com interações humanas, vieram diversos perigos e ameaças aos utilizadores.\ Da mesma forma que existem crimes no mundo físico também existem crimes digitais e da mesma forma que existem soluções e entidades responsáveis pela prevenção e combate a crimes físicos, também os mesmos existem para o mundo digital, proporcionando cibersegurança aos utilizadores da internet e ambientes digitais.
 
 \section{Tipos de ameaças}
+\label{sec:ameacas}
 \subsection{Ameaças cibernéticas}
 Conjunto de malware e software com capacidade de afetar o funcionamento normal de equipamentos digitais.\ Muitas vezes usadas para ciberterrorismo e causar danos graves com o intuito de lucrar ou impossibilitar o trabalho usual de uma entidade.\\
 \subsubsection{\large Botnets}
@@ -367,8 +368,6 @@ Esta aplicação é focada em vários campos, como, por exemplo:
 \end{itemize}
 A grande vantagem de usar o Autopsy ao invés de usar um sistema Kali por Live Boot, é que pode-se analisar unidades de disco diretamente a partir do sistema operativo principal, aumentando significamente a performance da análise, pois não se usa uma pen ou uma máquina virtual para usar o sistema operativo.
 
-% TODO : finish owasp-zap and docker
-
 \subsubsection{\ac{owasp-zap}}
 \label{subsubsec:owasp-zap}
 A \ac{owasp-zap} é uma aplicação open-source desenvolvida pela \ac{owasp}, com o objetivo de explorar vulnerabilidades num website. \ O programa vem com inúmeras ferramentas de Penetration Testing, para detetar o máximo de vulnerabiliades possíveis. \par
@@ -400,10 +399,16 @@ Uma imagem bastante conhecida neste campo é a imagem do Juice Shop, um projeto 
 
 \chapter{Soluções de segurança}
 \label{ch:solucoes-de-seguranca}
+Para combater todas as ameaças cibernéticas~(\ref{sec:ameacas}) e combater possíveis falhas de segurança, é necessário encontrar soluções de defesa do sistema e dos servidores.\ Há diversas formas de melhorar a segurança e de testar o sistema contra as ameaças, mesmo sem o danificar.
+\section{Soluções para o usuário}
+Por mais que a cibersegurança tenha de ser assegurada pela entidade responsável pelo sistema em questão, a verdade é que o usuário comum deve ajudar no combate às ameaças e ataques cibernéticos.\ Pode começar pela instrução dos usuários para um melhor uso da internet e outras tecnologias web no intuito de não serem tão facilmente expostas.\ O não abrir links desconhecidos ou suspeitos, a não confiança em toda a informação disponível online (pois por vezes acaba por ser maliciosa), a não transferência de ficheiros e aplicações sem que o seu criador ou gerenciador seja confiável e o não uso de sistemas web piratas pois com eles podem vir uma data de problemas.
+\section{Soluções para empresas}
+As empresas de tecnologia têm um papel bastante importante no que toca à segurança tanto dos seus sistemas como dos usuários dos seus serviços.\ Para isto as empresas têm de implementar medidas para promover esta mesma segurança.\ Para isto, um dos primeiros passos pode ser o teste da sua segurança que passa por provocar um ataque aos seus próprios sistemas (usando Owasp-Zap para realizar Pen~Testing~\ref{subsubsec:owasp-zap}) para poderem proceder à deteção das suas vulnerabilidades para posteriormente corrigirem os seus problemas e falhas de segurança.\ Outra medida que podem tomar é a monitorização a tempo inteira dos seus recursos e do tráfego dos seus serviços para garantir o bom funcionamento dos mesmos (principalmente para empresas grandes) bem como a resposta rápida por parte da empresa no evento de um ataque.\ Outro possível método, para a proteção de dados dos usuários, é o uso de diferentes servidores para que a informação não roubada caso algum tenha problemas.
 
 \chapter{Conclusões}
 \label{ch:conclusao}
-Apresenta conclusões.
+Com isto verifica-se a importância que a cibersegurança tem não só nos dias de hoje mas como no futuro uma vez que a internet, sistemas \ac{iot} e sistemas web vão estar cada vez mais presentes nas vidas do ser humano.\ Para as diversas ameaças~\ref{sec:ameacas} é necessário encontrar soluções de combate à altura.\ Para além disso, muitas empresas não se dão ao trabalho de corretamente corrigir os problemas de cibersegurança o que acaba por expor os seus usuários a riscos desnecessários.\ Com estas falhas das empresas, também os atacantes acabam por ter facilidade nos ciberataques o que lhes proporciona diversas vantagens, desde monetárias até mesmo vantagens diplomáticas (no caso de hacking entre organizações governamentais).
+\par Com o capítulo sobre vulnerabilidades~\ref{ch:vulnerabilidades} é possível também ver diversos métodos de analisar os possíveis problemas da segurança de sistemas e posteriormente as formas mais eficazes de os corrigir e que softwares usar para este efeito.
 
 \chapter*{Contribuições dos autores}
 Cada autor contribuiu igualmente para o produto final do trabalho, sendo justamente atribuído a nota de 50\% a cada um. \\
@@ -420,22 +425,22 @@ O autor \ac{tg} realizou o capítulo de Cibersegurança no geral e Soluções de
 \chapter*{Acrónimos}
 \begin{acronym}
     \acro{api}[API]{Application Programming Interface}
+    \acro{certs}[CERTs]{Computer Emergency Response Teams}
+    \acro{cirts}[CIRTs]{Computer Incident Response Teams}
+    \acro{cve}[CVE]{Common Vulnerabilities and Exposures}
+    \acro{cvss}[CVSS]{Common Vulnerability Scoring System}
+    \acro{cwe}[CWE]{Common Weakness and Enumeration}
     \acro{ddos}[DDOS]{Distributed denial-of-service}
+    \acro{dfi}[DFI]{Digital Forensic Investigation}
     \acro{http}[HTTP]{Hypertext Transfer Protocol}
     \acro{iot}[IOT]{Internet of Things}
     \acro{leci}[LECI]{Licenciatura em Engenharia de Computadores e Informática}
+    \acro{owasp}[OWASP]{Open Web Application Security Project}
+    \acro{owasp-zap}[OWASP-ZAP]{OWASP - Zed Attack Proxy}
     \acro{rg}[RG]{Rúben Gomes}
     \acro{rgpd}[RGPD]{Regulamento Geral sobre a Proteção de Dados}
     \acro{tg}[TG]{Tiago Garcia}
     \acro{ua}[UA]{Universidade de Aveiro}
-    \acro{dfi}[DFI]{Digital Forensic Investigation}
-    \acro{cirts}[CIRTs]{Computer Incident Response Teams}
-    \acro{certs}[CERTs]{Computer Emergency Response Teams}
-    \acro{cve}[CVE]{Common Vulnerabilities and Exposures}
-    \acro{cvss}[CVSS]{Common Vulnerability Scoring System}
-    \acro{cwe}[CWE]{Common Weakness and Enumeration}
-    \acro{owasp}[OWASP]{Open Web Application Security Project}
-    \acro{owasp-zap}[OWASP-ZAP]{OWASP - Zed Attack Proxy}
 \end{acronym}
 
 
