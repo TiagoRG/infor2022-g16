@@ -103,31 +103,100 @@ Resumo de 200~-~300 palavras.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Introdução}
-\label{chap.introducao}
+\label{ch:introducao}
 
 Com o passar dos anos, as tecnologias que temos ao nosso dispor tem evoluído de uma forma rápida e sem fim, como, por exemplo, o \textit{hardware} de um computador.\ Mas, com constantes evoluções, também vem uma necessidade de responsabilidade, pois com quanto mais recursos existirem, maior será o impacto de danos a indivíduos ou entidades.\\
 
 Com este relatório, iremos falar num tópico bastante sensível na atualidade, a Cibersegurança, bem como as diversas vulnerabilidades associadas de formas de nos protegermos contra as mesmas.
 
 \chapter{Cibersegurança no geral}
-\label{chap.cibersegurancanogeral}
-\section{Segurança}
+\label{ch:ciberseguranca-no-geral}
+\section{Conceito}
+Quando os sistemas e ambientes digitais foram criados não existia quase nenhuma interação entre dispositivos e a pouca que existia era efetuada por cabo.\ Porém, quando a internet foi criada, a interação entra dispositivos digitais aumentou e com isso, tal como acontece com interações humanas, vieram diversos perigos e ameaças aos utilizadores.\ Da mesma forma que existem crimes no mundo físico também existem crimes digitais e da mesma forma que existem soluções e entidades responsáveis pela prevenção e combate a crimes físicos, também os mesmos existem para o mundo digital, proporcionando cibersegurança aos utilizadores da internet e ambientes digitais.
 
-\chapter{Legislação}
-\label{chap.legislacao}
-\section{Legislação}
-\section{Proteção de dados}
+\section{Tipos de ameaças}
+\subsection{Ameaças cibernéticas}
+Conjunto de malware e software com capacidade de afetar o funcionamento normal de equipamentos digitais.\ Muitas vezes usadas para ciberterrorismo e causar danos graves com o intuito de lucrar ou impossibilitar o trabalho usual de uma entidade.\\
+\subsubsection{\large Botnets}
+\label{subsubsec:botnets}
+Botnets são robos digitais que conseguem infetar dispositivos, tal como um vírus e a partir daí permitir que utilizadores remotos tenham acesso à máquina onde se encontram alojados.\ Estas máquinas são muitas vezes usadas para fazer tarefas ilícitas e ilegais por parte do utilizador remoto sem que este seja exposto por não ser a máquina do mesmo a realizar as ações.
+\par Estes botnets podem contaminar computadores, dispositivos móveis, \textit{routers} e dispositivos \ac{iot}.
+\par Da mesma maneira que um vírus tenta infetar o corpo humano através de falhas no sistema imunitário, também estes bots tentam infetar os dispositivos através de falhas de segurança.\ É possível detetar que o dispositivo se encontra infetado a partir da deteção de comportamentos anormais por parte da máquina, por exemplo quando esta trabalha de forma mais lenta do que o normal ou quando durante a utilização aparecem mensagens de erro aleatórias.\\
+\subsubsection{Tipos de botnets}
+Dentro dos botnets existem dois tipos: \underline{Cliente Servidor} e \underline{Peer-to-Peer}
 
-\chapter{Programação aplicada à cibersegurança}
-\label{chap.programacao}
+\begin{itemize}
+\item Cliente servidor $\rightarrow$
+Este é o modelo dos botnets mais antigos em que os dispositivos infetados (clientes) recebem intruções de um outro dispositivo que os controla (servidor)
+\item Peer-to-peer $\rightarrow$ Este modelo corrige algumas falhas que o modelo de cliente servidor tinha.\ Em vez de ser establecida apenas uma conexão entre dois dispositivos (cliente e servidor), neste modelo todos os dispositivos infetados estão conectados entre si, todos a ser controlados pelo mesmo dispositivo que dá as intruções a todos os outros.\ Isto permite que no caso de haver uma falha com um dos dispositivos infetados, a rede continue online e funcional.\\
+\end{itemize}
+\subsubsection{\large \ac{ddos}}
+\label{subsubsec:ddos}
+Estas ameaças são das mais comuns e mais utilizadas pela comunidade de atacantes.\ O objetivo destes ataques é levar o consumo de recursos do servidor/aplicação ao limite.\ Uma vez sem recursos disponiveis, o servidor acaba por ter falhas de funcionalidade ou pode chegar mesmo a ir abaixo e ficar offline.\\
+A quantidade dste tipo de ataques têm vindo a aumentar substancialmente, segundo a Microsoft\footnote{Fonte: \url{https://www.microsoft.com/en-us/security/business/security-101/what-is-a-ddos-attack}}, a Azure Networking registou, em 2021, um aumento de 25\% a mais de casos de \ac{ddos} em relação a 2020.
+
+\subsubsection{Functionamento de \ac{ddos}}
+Durante estes ataques, um conjunto de Botnets~(\ref{subsubsec:botnets}) ataca uma aplicação/servidor com o objetivo de desgastar e levar o consumo de recursos ao limite.\ Fazem isto procedendo ao uso exagerado de solicitações \ac{http}.\ Uma vez que os atacantes usam estes bots, conseguem também acesso à base de dados, podendo conseguir roubar informação sensivel e, uma vez que os recursos do servidor já estão no limite, os proprietários e responsáveis pela segurança do servidor têm dificuldade na defesa do seu sistema.\ Estes ataques podem demorar diversos intervalos de tempo, desde minutos até mesmo dias.
+
+\subsubsection{Tipos de ataques \ac{ddos}}
+Existem três tipos de ataques \ac{ddos}:
+\begin{itemize}
+    \item Ataque volumétrico $\rightarrow$ estes ataques baseam-se na sobrecarga do servidor com tráfego, sendo o tipo de ataque mais comum.
+    \item Ataque de protocolo $\rightaroow$ estes ataques atacam certas camadas de protocolos de segurança eliminando limites de tráfego o que permite uma mais fácil sobrecarga dos recursos.
+    \item Ataque a camadas de recursos $\rightarrow$ estes ataques são usados principalmente em redes de servidores pois permitem o bloqueio na troca de informação entre os diversos hospedeiros.
+\end{itemize}
+Durante um ataque \ac{ddos} podem ser usados apenas um ou mais destes tipos, muitas vezes começa como um dos tipos para debilitar os sistemas de segurança para que depois possam ser usados ataques de exaustão do sistema.
+
+\subsection{Guerras cibernéticas}
+Por vezes estas ameaças e armas cibernéticas são usadas para criar guerras.\ Estas são muito prejudiciais para as vítimas da guerra mas benificial para o atacante pois este consegue muitas vezes vencer a guerra sem qualquer custo para si mas leva a sérios danos à vítimas, explorando falhas de segurança nos seus sistemas.
+\par As vítimas são muitas vezes países ou empresas e não entidades pequenas, sendo atacados não apenas dados das entidades mas também os próprios sistemas, levando ao corrompimento de parte do functionamento da entidade.
+\par Estas guerras são também usadas no roubo de informação desde dados simples até mesmo dados bancários ou na espionagem de dados militares ou diplomáticos.\ Outro uso dado a estas guerras é a corrupção e a manipulação de dados para benificio de uma certa entidade como acontece em algumas disputas de poder.
+\par Exixtem duas formas de guerras: ARC e ERC .
+
+\subsubsection{ARC}
+Estas guerras são responsáveis pela destruição e degradação de redes e da informação com a qual estas trabalham.\ Podem ser usados \ac{ddos} para provocar sobrecarga no servidor fazendo pedidos de informação de quantidade superior à que o servidor aguenta ou podem-se criar bloqueios nos servidores para impedir o acesso aos mesmos por parte dos utilizadores.
+\subsubsection{ERC}
+Estas guerras são as responsáveis pelo espionamento de entidades e por vezes provocar danos colaterais na rede durante o processo.
+
+\subsection{Internet banking}
+Tal como o nome sugere estas ameaças procuram tirar proveito de falhas em sistemas bancários quer bancos financeiros quer bancos de dados.\ Com a exploração de vulnerabilidades nestes bancos, o atacante consegue um grande acesso à informação dos utilizadores, usando essa informação para proveito próprio posteriormente.
+\par Muitos dos sistemas usam uma \ac{api} que permite a utilização do sistema por parte de aplicações externas.\ Por exemplo, o \href{https://www.paypal.com/}{PayPal} tem uma \ac{api} que permite que outras aplicações o usem como método de pagamento.\ No entanto, estas \ac{api} são também bastante sujeitas a ataques \ac{ddos}~(\ref{subsubsec:ddos}), entre outros.\ Outro problema com a sua encriptação é o baixo nível da complexidade das chaves de autenticação usadas (muitas vezes são pins numéricos com poucos digitos).
+
+\subsection{Mobile Malware}
+Este género de malware pode ter a capacidade de roubar a informação do dispositivo, inutilizar aplicações.\ Estas ameaças podem facilmente se espalhar através do Bluetooth.
+\subsubsection{Mobile malwares mais usados} {
+\begin{itemize}
+    \item Banking $\rightarrow$ Captura dados de logins do usuário
+    \item Ransomware $\rightarrow$ Bloqueia ficheiros locais
+    \item Spyware $\rightarrow$ Controla a atividade do utilizador
+    \item Adware $\rightarrow$ Constantes publicidades
+    \item MMS $\rightarrow$ Usa mensagens para explorar falhas nas bibliotecas do andriod
+\end{itemize}
+}
+Com estes malwares, o usuário corre o risco de ter dinheiro, informação pessoal/profissional/empresarial roubadas, podendo ser posteriormente vendidas no mercado negro da internet.
+\pagebreak
+\section{Programação aplicada à Cibersegurança}
+Como é óbvio, para a automatização quer seja para os sistemas de ataque ou para os sistemas de defesa é usada bastante programação e como isto não são sistemas dísponivels a todos os utilizadores, cada hacker cria a sua aplicação à sua maneira para atingir os seus objetivos.
+\subsection{Linguagens mais usadas em hacking}
+\begin{enumerate}
+    \item \href{https://www.python.org/}{Python}
+    \item C
+    \item \href{https://www.php.net/}{PHP}
+    \item \href{https://cplusplus.com/}{C++}
+\end{enumerate}
+\subsection{Sistemas operativos usados em hacking}
+Todos os hackers optam pelo uso de uma distribuição de linux e embora a maior parte delas funcionem, o \href{https://www.kali.org/}{Kali Linux} é o mais usado, entramos em mais detalhes mais à frente em~\ref{subsubsec:kali}.
 
 \chapter{Vulnerabilidades}
-\label{chap.vulnerabilidade}
+\label{ch:vulnerabilidades}
 \section{Análise de vulnerabilidades}
 \section{Análise de evidências}
 
+\chapter{Soluções de segurança}
+\label{ch:solucoes-de-seguranca}
+
 \chapter{Conclusões}
-\label{chap.conclusao}
+\label{ch:conclusoes}
 Apresenta conclusões.
 
 \chapter*{Contribuições dos autores}
@@ -144,6 +213,10 @@ por exemplo AS para António Silva.
 
 \chapter*{Acrónimos}
 \begin{acronym}
+    \acro{api}[API]{Application Programming Interface}
+    \acro{ddos}[DDOS]{Distributed denial-of-service}
+    \acro{http}[HTTP]{Hypertext Transfer Protocol}
+    \acro{iot}[IOT]{Internet of Things}
     \acro{leci}[LECI]{Licenciatura em Engenharia de Computadores e Informática}
     \acro{rg}[RG]{Rúben Gomes}
     \acro{rgpd}[RGPD]{Regulamento Geral sobre a Proteção de Dados}

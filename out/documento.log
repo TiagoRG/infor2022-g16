@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.12)  24 NOV 2022 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.12)  10 DEC 2022 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -626,7 +626,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<ua.pdf, id=44, 52.195pt x 55.20625pt>
+<ua.pdf, id=64, 52.195pt x 55.20625pt>
 File: ua.pdf Graphic file (type pdf)
 <use ua.pdf>
 Package pdftex.def Info: ua.pdf  used on input line 53.
@@ -677,52 +677,101 @@ l.112 \chapter
 
 ]
 Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+Package acronym Info: Label `acro:iot' newly defined as it shall be overridden
+although it is yet undefined on input line 123.
 [2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+Package acronym Info: Label `acro:ddos' newly defined as it shall be overridden
+
+although it is yet undefined on input line 133.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+36.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[][][]\T1/cmr/m/n/8 Fonte: []$\T1/cmtt/m/n/8 https : / / www . microsoft . com 
+/ en-[]us / security / business / security-[]101 /
+ []
+
+Package acronym Info: Label `acro:http' newly defined as it shall be overridden
+
+although it is yet undefined on input line 139.
+[3]
+./documento.tex:145: Undefined control sequence.
+<recently read> \rightaroow 
+                            
+l.145     \item Ataque de protocolo $\rightaroow
+                                                $ estes ataques atacam certa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+Package acronym Info: Label `acro:api' newly defined as it shall be overridden
+although it is yet undefined on input line 163.
+ [5]
+
+LaTeX Warning: Reference `subsubsec:kali' on page 6 undefined on input line 188
+.
+
+[6]
 Cap\'{\i }tulo 2.
-[3
+[7
 
 ]
 Cap\'{\i }tulo 3.
-[4
+[8
 
 ]
 Cap\'{\i }tulo 4.
-[5
+[9
 
 ]
-Cap\'{\i }tulo 5.
-[6
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 Package acronym Info: Label `acro:rg' newly defined as it shall be overridden
-although it is yet undefined on input line 141.
+although it is yet undefined on input line 210.
 Package acronym Info: Label `acro:tg' newly defined as it shall be overridden
-although it is yet undefined on input line 141.
+although it is yet undefined on input line 210.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[7
+[10
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 156.
+LaTeX Warning: Empty bibliography on input line 229.
 
-[8
+[11
 
 ] (/home/tiagorg/repos/infor2022-ap-g16/out/documento.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `documento.out' has not changed.
-(rerunfilecheck)             Checksum: 1022C9536772A9C347670BA44CCFD8A5;1467.
+(rerunfilecheck)             Checksum: E27DB55AACE3CDCF3ACF58883A982209;2532.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                documento
@@ -733,29 +782,36 @@ Package logreq Info: Writing requests to 'documento.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18038 strings out of 480186
- 316353 string characters out of 5894354
- 1032588 words of memory out of 5000000
- 35763 multiletter control sequences out of 15000+600000
- 480391 words of font info for 48 fonts, out of 8000000 for 9000
+ 18131 strings out of 480186
+ 317829 string characters out of 5894354
+ 1038961 words of memory out of 5000000
+ 35818 multiletter control sequences out of 15000+600000
+ 484113 words of font info for 54 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 60i,6n,68p,1051b,1657s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.6
-00pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx207
-4.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti
-1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1200.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx2488.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1728.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecrm1440.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm2488.600pk>
-Output written on /home/tiagorg/repos/infor2022-ap-g16/out/documento.pdf (12 pa
-ges, 100262 bytes).
+ 60i,8n,68p,1051b,1657s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.6
+00pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
+0.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
+0600.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm0700.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
+c/tcrm1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecbx1200.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecbx1440.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx2074.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecti1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1000.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1200.600pk> </home/tiagorg/.texlive2021/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/tiagorg/.texlive2021/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/tiagorg/.texlive2021/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/tiagorg/.texlive2021/texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/tiagorg/.texlive2021/tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/tiagorg/repos/infor2022-ap-g16/out/documento.pdf (15 pa
+ges, 148662 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 668 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
