@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>Cibersegurança</title>
 
-<!--    &lt;!&ndash; Bootstrap minified CSS &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-<!--    &lt;!&ndash; Optional theme &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">-->
-    
     <!-- Bootstrap v5.3 navbar -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
     <!-- Bootstrap stylesheet -->
@@ -17,19 +12,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-
     <!-- Personal Styles -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Personal Scripts -->
     <script src="js/index.js"></script>
-
-
+    <!-- Custom styles for this template -->
+    <link href="css/headers.css" rel="stylesheet">
+    <!-- Bootstrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<header class="p-3 text-bg-dark">
+<nav class="p-3 text-bg-dark">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -37,10 +31,20 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Início</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Cibersegurança no Geral</a></li>
+                <li>
+                    <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="nav-link px-2 text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Vulnerabilidades
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="#">Análise de vulnerabilidades</a></li>
+                            <li><a class="dropdown-item" href="#">Análise de evidências</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-link px-2 text-white">Soluções de segurança</a></li>
             </ul>
 
             <div class="text-end">
@@ -48,6 +52,19 @@
             </div>
         </div>
     </div>
-</header>
+</nav>
+<div class="container body-content">
+
+</div>
+<footer>
+    <div class="container">
+        <div style="float: left">
+            Cibersegurança&emsp;&bullet;&emsp;<a href="index.html">Início</a>&emsp;&bullet;&emsp;Criado por <a href="https://github.com/RubenCGomes">Rúben Gomes</a> e <a href="https://github.com/TiagoRG">Tiago Garcia</a>
+        </div>
+        <div style="float: right">
+            UAveiro&emsp;&bullet;&emsp;DETI
+        </div>
+    </div>
+</footer>
 </body>
 </html>
