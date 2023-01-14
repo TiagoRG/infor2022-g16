@@ -12,6 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Personal Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,9 +27,19 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 text-white">Início</a></li>
-                <li><a href="#" class="nav-link px-2 text-white" >Cibersegurança no Geral</a></li>
-                <li><a href="vulnerabilidades.html" class="nav-link px-2 text-secondary">Vulnerabilidades</a></li>
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Início</a></li>
+                <li><a href="ciberseguranca-no-geral.html" class="nav-link px-2 text-white">Cibersegurança no Geral</a></li>
+                <li>
+                    <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="nav-link px-2 text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Vulnerabilidades
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="vulnerabilidades.html">Análise de vulnerabilidades</a></li>
+                            <li><a class="dropdown-item" href="vulnerabilidades.html">Análise de evidências</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#" class="nav-link px-2 text-white">Soluções de segurança</a></li>
             </ul>
 
@@ -35,5 +49,21 @@
         </div>
     </div>
 </nav>
+<div class="container body-content shadow">
+
+</div>
+<button id="goToTopButton" onclick="window.scrollTo(0,0)">
+    <img src="images/arrow-up.png" alt="^" style="height: 100%; width: 100%;">
+</button>
+<footer>
+    <div class="container">
+        <div style="float: left">
+            Cibersegurança&emsp;&bullet;&emsp;<a href="index.html">Início</a>&emsp;&bullet;&emsp;Criado por <a href="https://github.com/RubenCGomes">Rúben Gomes</a> e <a href="https://github.com/TiagoRG">Tiago Garcia</a>
+        </div>
+        <div style="float: right">
+            UAveiro&emsp;&bullet;&emsp;DETI
+        </div>
+    </div>
+</footer>
 </body>
 </html>

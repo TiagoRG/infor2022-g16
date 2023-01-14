@@ -19,16 +19,6 @@
 <!--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <!-- Optional theme -->
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">-->
-    <script>
-        function toggleTopics() {
-            let topics = document.getElementById("topics")
-            if (topics.classList.contains("collapse"))
-                topics.classList.remove("collapse")
-            else
-                topics.classList.add("collapse")
-        }
-
-    </script>
 </head>
 <body>
 <nav class="p-3 text-bg-dark">
@@ -164,6 +154,9 @@
         Todos os hackers optam pelo uso de uma distribuição de linux e embora a maior parte delas funcionem, o <a href="https://www.kali.org/">Kali Linux</a> é o mais usado, estando mais detalhado <a href="vulnerabilidades.html#kali">aqui</a>.
     </p>
 </div>
+<button id="goToTopButton" onclick="window.scrollTo(0,0)">
+    <img src="images/arrow-up.png" alt="^" style="height: 100%; width: 100%;">
+</button>
 <footer>
     <div class="container">
         <div style="float: left">
