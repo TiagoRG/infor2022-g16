@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     text-align: justify;
     text-justify: inter-word;
     background-image: url("../images/background.png");
@@ -7,17 +8,23 @@ body {
 }
 
 .body-content {
-    margin-top: 80px;
-    padding-top: 20px;
     padding-bottom: 50px;
     background-color: white;
 }
 
-nav {
+#goToTopButton {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 33px;
+    background-color: #000;
+    color: #505050;
+    cursor: pointer;
+    border-radius: 100%;
+    border: #505050 3px solid;
+    height: 75px;
+    width: 75px;
 }
 
 footer {
