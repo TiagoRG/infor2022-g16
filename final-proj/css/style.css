@@ -19,7 +19,7 @@ body {
     right: 20px;
     z-index: 99;
     font-size: 24px;
-    background-color: #000;
+    background-color: #212529;
     color: #505050;
     cursor: pointer;
     border-radius: 100%;
@@ -122,4 +122,21 @@ a {
 @keyframes fadeOut {
     0% { opacity: 1;}
     100% { opacity: 0;}
+}
+
+#cybercrime-clock {
+    float: right;
+    right: 0;
+    top: 0;
+}
+
+#contents-list {
+    border: 1px solid #ddd;
+}
+
+/* Styles for index */
+
+.index-title {
+    font-size: 70px;
+    text-align: center;
 }
