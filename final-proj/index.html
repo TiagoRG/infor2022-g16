@@ -32,7 +32,7 @@
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="index.html" class="nav-link px-2 text-secondary">Início</a></li>
-                <li><a href="ciberseguranca-no-geral.html" class="nav-link px-2 text-white">Cibersegurança no Geral</a></li>
+                <li><a href="ameacas.html" class="nav-link px-2 text-white">Cibersegurança no Geral</a></li>
                 <li>
                     <div class="flex-shrink-0 dropdown">
                         <a href="#" class="nav-link px-2 text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#" class="nav-link px-2 text-white">Soluções de segurança</a></li>
+                <li><a href="solucoes.html" class="nav-link px-2 text-white">Soluções de segurança</a></li>
             </ul>
 
             <div class="text-end">
@@ -54,7 +54,72 @@
     </div>
 </nav>
 <div class="container body-content">
-
+    <div class="index-title">
+        <h1 id="ciberseguranca-no-geral" style="font-size: 120px">CIBERSEGURAN&Ccedil;A</h1>
+        <button class="btn btn-dark" style="font-size: 30px" onclick="window.location.href='#contents'">Conteúdos</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".index-title").height($(window).height()-$("nav").height()).css("padding-top", $(".index-title").height()*0.3);
+        });
+    </script>
+    <h1 id="contents">Lista de conteúdos</h1>
+    <ul id="contents-list">
+        <li>
+            <a href="#conceito">Conceito</a>
+        </li>
+        <li>
+            <a href="#programacao">Programação aplicada à Cibersegurança</a>
+        </li>
+        <li>
+            <a href="ameacas.html">Tipos de Ameaças</a>
+            <ul>
+                <li><a href="ameacas.html#ameacas-ciberneticas">Ameaças Cibernéticas</a></li>
+                <li><a href="ameacas.html#guerras-ciberneticas">Guerras Cibernéticas</a></li>
+                <li><a href="ameacas.html#internet-banking">Internet Banking</a></li>
+                <li><a href="ameacas.html#mobile-malware">Monile Malware</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="vulnerabilidades.html">Vulnerabilidades</a>
+            <ul>
+                <li><a href="vulnerabilidades.html">Análise de Vulnerabilidades</a></li>
+                <li><a href="vulnerabilidades.html">Análise de Evidências</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="solucoes.html">Soluções de segurança</a>
+        </li>
+    </ul>
+    <hr>
+    <h1 id="introducao">Introdução</h1>
+    <p>
+        Com o passar dos anos, as tecnologias que temos ao nosso dispor tem evo- luído de uma forma rápida e sem m, como, por exemplo, o hardware de um computador. Mas, com constantes evoluções, também vem uma necessidade de responsabilidade, pois com quanto mais recursos existirem, maior será o impacto de danos a indivíduos ou entidades.
+    </p>
+    <p>
+        Dito isto, neste website iremos apresentar diversos tipos de ameaças cibernéticas, bem como as principais vulnerabilidades métodos para as detetar e as soluções de segurança que existem para as ameaças.
+    </p>
+    <hr>
+    <h1 id="conceito">Conceito</h1>
+    <p>
+        Quando os sistemas e ambientes digitais foram criados n&atilde;o existia quase nenhuma intera&ccedil;&atilde;o entre dispositivos e a pouca que existia era efetuada por cabo. Por&eacute;m, quando a internet foi criada, a intera&ccedil;&atilde;o entre dispositivos digitais aumentou e com isso, tal como acontece com intera&ccedil;&otilde;es humanas, vieram diversos perigos e amea&ccedil;as aos utilizadores. Da mesma forma que existem crimes no mundo físico tamb&eacute;m existem crimes digitais e da mesma forma que existem solu&ccedil;&otilde;es e entidades respons&aacute;veis pela preven&ccedil;&atilde;o e combate a crimes físicos, tamb&eacute;m os mesmos existem para o mundo digital, proporcionando ciberseguran&ccedil;a aos utilizadores da internet e ambientes digitais.
+    </p>
+    <hr>
+    <h1 id="programacao">Programa&ccedil;&atilde;o aplicada &agrave; Ciberseguran&ccedil;a</h1>
+    <p>
+        Como &eacute; &oacute;bvio, para a automatiza&ccedil;&atilde;o quer seja para os sistemas de ataque ou para os sistemas de defesa &eacute; usada bastante programa&ccedil;&atilde;o e como isto n&atilde;o s&atilde;o sistemas dísponivels a todos os utilizadores, cada <i>hacker</i> cria a sua aplica&ccedil;&atilde;o &agrave; sua maneira para atingir os seus objetivos.
+    </p>
+    <h2>Linguagens mais usadas em Ciberseguran&ccedil;a</h2>
+    <ul>
+        <li><a href="https://www.python.org/">Python</a></li>
+        <li>C</li>
+        <li><a href="https://www.php.net/">PHP</a></li>
+        <li><a href="https://cplusplus.com/">C++</a></li>
+    </ul>
+    <h2>Sistema mais usados em Ciberseguran&ccedil;a</h2>
+    <p>
+        Todos os <i>hackers</i> optam pelo uso de uma distribui&ccedil;&atilde;o de linux a seu gosto e embora a maioria delas funcionem, o <a href="https://www.kali.org/">Kali Linux</a> &eacute; o mais usado por ter uma grande quantidade de ferramentas dedicadas à área. Esta ferramenta encontra-se mais detalhado <a href="vulnerabilidades.html#kali">aqui</a>.
+    </p>
 </div>
 <button id="goToTopButton" onclick="window.scrollTo(0,0)">
     <img src="images/arrow-up.png" alt="^" style="height: 100%; width: 100%;">
