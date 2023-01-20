@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link rel="icon" href="images/favicon.jpeg">
+
     <!-- Bootstrap v5.3 navbar -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
     <!-- Bootstrap stylesheet -->
@@ -12,7 +14,9 @@
     <!-- Bootstrap JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-
+    <!-- LeaftLet CSS e JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <!-- Personal Styles -->
     <link rel="stylesheet" href="css/about.css">
@@ -28,12 +32,21 @@
         <a target="_blank" href="https://github.com/RubenCGomes">R&uacute;ben Gomes</a>&emsp;&bullet;&emsp;(50%)<br>
         <a target="_blank" href="https://github.com/TiagoRG">Tiago Garcia</a>&emsp;&bullet;&emsp;(50%)<br>
     </p>
-    <p style="font-size: 110%">
+    <p style="font-size: 135%">
         2022-2023<br>
+    </p>
+    <p style="font-size: 140%">
         <a target="_blank" href="https://www.ua.pt">Universidade de Aveiro</a><br>
         Departamento de Electr&oacute;nica, Telecomunica&ccedil;&otilde;es e Inform&aacute;tica<br>
     </p>
-    <img src="images/ualogo.png" alt="UA" width="100" height="100">
+    <div class="row">
+        <div class="columnleft" style="text-align: center">
+            <div id="about-map" style="width: 100%; height: 450px"></div>
+            <!-- JavaScript for map design and other functionalities -->
+            <script src="js/map.js"></script>
+        </div>
+        <span style="color:blue" id="coordinates"></span>
+    </div>
     <hr>
     <h2>SOBRE O TRABALHO</h2>
     Neste trabalho &eacute; abordado o tema de cibersegurança. Tema este que, com o desenvolver gradual das tecnologias, torna-se cada vez mais importante. Vulnerabilidades surgem a cada dia, e h&aacute; cada vez mais ataques cibern&eacute;ticos. Com este projeto procuramos tocar nos pontos mais importantes do mundo digital, por isso os autores consideram que este site &eacute; ideal para qualquer leitor que deseja saber algo mais sobre o mundo digital.
@@ -55,6 +68,7 @@
         <li>T. D. Team, <a href="https://docs.docker.com/get-started/overview/"><i>Docker Overview</i></a></li>
     </ul>
     </p>
+    <img src="images/ualogo.png" alt="UA" width="100" height="100">
 </div>
 <footer class="p-3 text-bg-dark">
     <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
