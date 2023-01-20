@@ -147,7 +147,7 @@
     <p>
         A Threat Intelligence baseia-se na obten&ccedil;&atilde;o e an&aacute;lise de informa&ccedil;&otilde;es que ajudem a identificar poss&iacute;veis ataques. Esta vem com o benef&iacute;cio de ter uma seguran&ccedil;a proativa, ou seja, evitar qualquer tipo de amea&ccedil;as a uma empresa.
     </p>
-    <p>O seguinte <a href="https://medium.com/cryptogennepal/cyber-kill-chain-offensive-and-defensive-approach-22033e37a340">esquema</a> demonstra no que constitui uma Kill Chain:</p>
+    <p>O seguinte <a href="https://miro.medium.com/max/720/1*l9ccExnOaaC5PBWW_myW9w.webp">esquema</a> demonstra no que constitui uma Kill Chain:</p>
 
     <div class="image-w-text">
         <img src="images/cyber_kill_chain.png" class="center-image">
@@ -260,7 +260,7 @@
         O grande objetivo da <a href="https://cwe.mitre.org/">CWE</a> &eacute; parar as vulnerabilidades na sua ra&iacute;z, educando qualquer pessoa que trabalha no ramo da inform&aacute;tica, de modo a evitar erros comuns e contribuir para um espa&ccedil;o mais seguro numa empresa.
     </p>
 
-    <h4>Open Web Application Security Project (OWASP)</h4>
+    <h4 id="owasp-zap">Open Web Application Security Project (OWASP)</h4>
     <p>
         O <a href="https://owasp.org/">OWASP</a> &eacute; uma funda&ccedil;&atilde;o open-source com o intuito de melhorar a seguran&ccedil;a de ‘softwares’ no geral, ensinando pessoas pelo mundo todo para existir uma ‘web’ mais segura.
     </p>
@@ -269,7 +269,7 @@
         cibern&eacute;tico, o <a href="https://owasp.org/www-project-top-ten/">OWASP Top Ten</a>. Este projeto consiste em, no final de cada ano, organizar um top 10 das amea&ccedil;as mais comuns nesse mesmo ano. É feito sempre uma compara&ccedil;&atilde;o com anos anteriores para verificar as mudan&ccedil;as e melhorias que aconteceram. Ao ser realizada a compara&ccedil;&atilde;o, consegue-se saber se houve melhorias face ao combate de vulnerabilidades anteriores, as novas vulnerabilidades introduzidas e uma breve explica&ccedil;&atilde;o de cada uma delas.
     </p>
     <p>
-        No seguinte <a href="https://owasp.org/www-project-top-ten/">esquema</a>, est&aacute; representada a compara&ccedil;&atilde;o das vulnerabilidades do ano 2017, e do ano 2021:
+        No seguinte <a href="https://owasp.org/www-project-top-ten/assets/images/mapping.png">esquema</a>, est&aacute; representada a compara&ccedil;&atilde;o das vulnerabilidades do ano 2017, e do ano 2021:
     </p>
 
     <div class="image-w-text">
@@ -281,7 +281,7 @@
 
     <h2>Softwares usados para an&aacute;lises</h2>
     <p>
-        Para poder examinar e tirar conclus&otilde;es de anomalias nos sistemas, &eacute; necess&aacute;rio utilizar ‘software’ dedicado para este tipo de problemas. Os ‘softwares’ mais utilizados s&atilde;o o <a href="https://www.autopsy.com/">Autopsy</a>, o <a href="https://www.zaproxy.org/">OWASP-ZAP</a>, e o Docker.
+        Para poder examinar e tirar conclus&otilde;es de anomalias nos sistemas, &eacute; necess&aacute;rio utilizar ‘software’ dedicado para este tipo de problemas. Os ‘softwares’ mais utilizados s&atilde;o o <a href="https://www.autopsy.com/">Autopsy</a>, o <a href="https://www.zaproxy.org/">OWASP-ZAP</a>, e o <a href="https://www.docker.com/">Docker</a>.
     </p>
     <p>
         Tamb&eacute;m &eacute; importante referir que para examinar discos e outras unidades de mem&oacute;ria, &eacute; necess&aacute;rio usar uma m&aacute;quina virtual <a href="https://www.kali.org/get-kali/">Kali</a>.
@@ -332,31 +332,31 @@
         Por outro lado, n&atilde;o &eacute; a ferramenta mais pr&aacute;tica de usar em empresas, pelo facto de ser open-source e n&atilde;o ter tanta privacidade como outras ferramentas pagas.
     </p>
     <p>
-        É recomendado pela <a href="https://www.zaproxy.org/">OWASP-ZAP</a> o uso desta aplica&ccedil;&atilde;o juntamente com o Docker, para a automatiza&ccedil;&atilde;o das ferramentas existentes no programa.
+        É recomendado pela <a href="https://www.zaproxy.org/">OWASP-ZAP</a> o uso desta aplica&ccedil;&atilde;o juntamente com o <a href="https://www.docker.com/">Docker</a>, para a automatiza&ccedil;&atilde;o das ferramentas existentes no programa.
     </p>
     <p>
         Tamb&eacute;m &eacute; importante referir o projeto Juice Shop, que consiste numa apli- ca&ccedil;&atilde;o escrita em JavaScript e que simula uma loja gen&eacute;rica de v&aacute;rios produtos, que cont&eacute;m uma s&eacute;rie de vulnerabilidades.
     </p>
     <p>
-        É aconselhado usar a imagem deste projeto no Docker, para a explora&ccedil;&atilde;o dos erros ser efetuada localmente e eficientemente. Estes erros t&ecirc;m v&aacute;rios graus de dificuldade de serem explorados, e &agrave; medida que se descobre os erros, eles v&atilde;o sendo guardados num ficheiro log. que cont&eacute;m o que j&aacute; foi descoberto pelo utilizador.
+        É aconselhado usar a imagem deste projeto no <a href="https://www.docker.com/">Docker</a>, para a explora&ccedil;&atilde;o dos erros ser efetuada localmente e eficientemente. Estes erros t&ecirc;m v&aacute;rios graus de dificuldade de serem explorados, e &agrave; medida que se descobre os erros, eles v&atilde;o sendo guardados num ficheiro log. que cont&eacute;m o que j&aacute; foi descoberto pelo utilizador.
     </p>
 
     <h4>Docker</h4>
     <p>
-        O Docker &eacute; um programa usado para desenvolver, enviar e correr aplica&ccedil;&otilde;es. Desta forma, pode-se criar v&aacute;rios containers para correr ou enviar qualquer tipo de aplica&ccedil;&atilde;o num espa&ccedil;o isolado. Tem a vantagem de poder ter v&aacute;rias aplica&ccedil;&otilde;es a correr localmente no mesmo sistema sem consumir muito hardware, que &eacute; um grande benef&iacute;cio na &aacute;rea da ciberseguran&ccedil;a, pois &eacute; usado v&aacute;rios programas ao mesmo tempo.
+        O <a href="https://www.docker.com/">Docker</a> &eacute; um programa usado para desenvolver, enviar e correr aplica&ccedil;&otilde;es. Desta forma, pode-se criar v&aacute;rios containers para correr ou enviar qualquer tipo de aplica&ccedil;&atilde;o num espa&ccedil;o isolado. Tem a vantagem de poder ter v&aacute;rias aplica&ccedil;&otilde;es a correr localmente no mesmo sistema sem consumir muito hardware, que &eacute; um grande benef&iacute;cio na &aacute;rea da ciberseguran&ccedil;a, pois &eacute; usado v&aacute;rios programas ao mesmo tempo.
     </p>
-    <p>No seguinte <a href="https://docs.docker.com/get-started/overview/">esquema</a> &eacute; apresentado que mostra a l&oacute;gica por detr&aacute;s do Docker:</p>
+    <p>No seguinte <a href="https://docs.docker.com/engine/images/architecture.svg">esquema</a> &eacute; apresentado que mostra a l&oacute;gica por detr&aacute;s do <a href="https://www.docker.com/">Docker</a>:</p>
 
     <div class="image-w-text">
         <img src="images/docker-scheme.png" class="center-image">
-        <p>Esquema que representa o funcionamento do Docker</p>
+        <p>Esquema que representa o funcionamento do <a href="https://www.docker.com/">Docker</a></p>
     </div>
 
     <p>
         Os containers s&atilde;o feitos e funcionam em base de imagens, semelhante a um sistema operativo. Estas s&atilde;o normalmente imagens de outras imagens, apenas com algumas modifica&ccedil;&otilde;es feitas.
     </p>
     <p>
-        Uma imagem bastante conhecida neste campo &eacute; a imagem do Juice Shop, um projeto referido na Se&ccedil;&atilde;o <a href="https://www.zaproxy.org/">OWASP-ZAP</a> Com o Docker e a imagem deste projeto, podemos criar um container que vai correr o site, localmente. A grande vantagem de correr ficheiros localmente &eacute; que pode-se fazer os testes sem qualquer problema, &eacute; poss&iacute;vel fazer certos tipos de ataque que na Internet seriam considerados ilegais mas que s&atilde;o, sem d&uacute;vida alguma, cruciais para o bom funcionamento de um website.
+        Uma imagem bastante conhecida neste campo &eacute; a imagem do Juice Shop, um projeto referido na Se&ccedil;&atilde;o <a href="https://www.zaproxy.org/">OWASP-ZAP</a>. Com o <a href="https://www.docker.com/">Docker</a> e a imagem deste projeto, podemos criar um container que vai correr o site, localmente. A grande vantagem de correr ficheiros localmente &eacute; que pode-se fazer os testes sem qualquer problema, &eacute; poss&iacute;vel fazer certos tipos de ataque que na Internet seriam considerados ilegais mas que s&atilde;o, sem d&uacute;vida alguma, cruciais para o bom funcionamento de um website.
     </p>
 
 </div>
