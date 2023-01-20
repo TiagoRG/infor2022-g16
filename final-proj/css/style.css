@@ -43,6 +43,8 @@ a {
 }
 
 .page-title {
+    padding-top: 45px;
+    padding-bottom: 25px;
     font-size: 70px;
 }
 
@@ -139,4 +141,8 @@ a {
 .index-title {
     font-size: 70px;
     text-align: center;
+}
+
+#ciberseguranca-title {
+    text-shadow: black 0.1em 0.1em 0.9em;
 }
