@@ -126,12 +126,6 @@ a {
     100% { opacity: 0;}
 }
 
-#cybercrime-clock {
-    float: right;
-    right: 0;
-    top: 0;
-}
-
 #contents-list {
     border: 1px solid #ddd;
 }
@@ -141,6 +135,9 @@ a {
 .index-title {
     font-size: 70px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: auto;
 }
 
 #ciberseguranca-title {
